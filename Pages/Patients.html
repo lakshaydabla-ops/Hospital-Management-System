@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h2>🏥 CarePlus</h2>
+
+        <ul>
+            <li><a href="../index.html">🏠 Home</a></li>
+            <li><a href="dashboard.html">📊 Dashboard</a></li>
+            <li><a href="patients.html">🧑 Patients</a></li>
+            <li><a href="doctors.html">👨‍⚕️ Doctors</a></li>
+            <li><a href="appointments.html">📅 Appointments</a></li>
+            <li><a href="billing.html">💳 Billing</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+
+        <h1>Patient Management</h1>
+
+        <div class="patient-form">
+
+            <input type="text" id="name" placeholder="Patient Name">
+
+            <input type="number" id="age" placeholder="Age">
+
+            <input type="text" id="gender" placeholder="Gender">
+
+            <input type="text" id="disease" placeholder="Disease">
+
+            <button onclick="addPatient()">Add Patient</button>
+
+        </div>
+
+        <br>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Patient..."
+            onkeyup="searchPatient()">
+
+        <br><br>
+
+        <table id="patientTable">
+
+            <thead>
+
+                <tr>
+
+                    <th>Name</th>
+
+                    <th>Age</th>
+
+                    <th>Gender</th>
+
+                    <th>Disease</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h2>🏥 CarePlus</h2>
+
+        <ul>
+            <li><a href="../index.html">🏠 Home</a></li>
+            <li><a href="dashboard.html">📊 Dashboard</a></li>
+            <li><a href="patients.html">🧑 Patients</a></li>
+            <li><a href="doctors.html">👨‍⚕️ Doctors</a></li>
+            <li><a href="appointments.html">📅 Appointments</a></li>
+            <li><a href="billing.html">💳 Billing</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <h1>Appointment Management</h1>
+
+        <div class="patient-form">
+
+            <input type="text" id="patientName" placeholder="Patient Name">
+
+            <input type="text" id="doctorNameApp" placeholder="Doctor Name">
+
+            <input type="date" id="appointmentDate">
+
+            <input type="time" id="appointmentTime">
+
+            <button onclick="addAppointment()">Book Appointment</button>
+
+        </div>
+
+        <br>
+
+        <input type="text"
+               id="appointmentSearch"
+               placeholder="Search Patient..."
+               onkeyup="searchAppointment()">
+
+        <br><br>
+
+        <table id="appointmentTable">
+
+            <thead>
+
+                <tr>
+                    <th>Patient</th>
+                    <th>Doctor</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody></tbody>
+
+        </table>
+
+    </main>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

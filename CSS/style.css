@@ -1,0 +1,477 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================
+   RESET
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f9ff;
+    color:#333;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#0d6efd;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.logo h2{
+    color:white;
+    font-size:30px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#ffd43b;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 8%;
+    gap:40px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:52px;
+    margin-bottom:20px;
+    color:#0d6efd;
+}
+
+.hero-text p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#0d6efd;
+    color:white;
+    padding:15px 35px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#084298;
+    transform:translateY(-3px);
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+}
+
+/* ==========================
+   SERVICES
+========================== */
+
+.services{
+    padding:70px 8%;
+}
+
+.services h2{
+    text-align:center;
+    font-size:40px;
+    color:#0d6efd;
+    margin-bottom:50px;
+}
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#0d6efd;
+    font-size:24px;
+}
+
+.card p{
+    line-height:1.7;
+}
+
+/* ==========================
+   WHY CHOOSE US
+========================== */
+
+.why-us{
+    padding:70px 8%;
+    background:#eaf3ff;
+}
+
+.why-us h2{
+    text-align:center;
+    color:#0d6efd;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.feature-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.feature-box h3{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+/* ==========================
+   DOCTORS
+========================== */
+
+.doctors{
+    padding:70px 8%;
+}
+
+.doctors h2{
+    text-align:center;
+    font-size:40px;
+    color:#0d6efd;
+    margin-bottom:50px;
+}
+
+.doctor-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.doctor-card{
+    background:white;
+    text-align:center;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.doctor-card:hover{
+    transform:translateY(-10px);
+}
+
+.doctor-card img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-bottom:20px;
+    border:5px solid #0d6efd;
+}
+
+.doctor-card h3{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h2{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0d6efd;
+}
+
+::-webkit-scrollbar-track{
+    background:#ddd;
+}
+
+/* ==========================
+   DASHBOARD
+========================== */
+
+.dashboard{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:250px;
+    background:#0d6efd;
+    color:white;
+    padding:30px;
+}
+
+.sidebar h2{
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin:20px 0;
+}
+
+.sidebar ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.sidebar ul li a:hover{
+    color:#ffd43b;
+}
+
+.main-content{
+    flex:1;
+    padding:40px;
+    background:#f5f9ff;
+}
+
+.main-content h1{
+    margin-bottom:30px;
+    color:#0d6efd;
+}
+
+.dashboard-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:40px;
+}
+
+.dash-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.dash-card h2{
+    color:#0d6efd;
+    font-size:40px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+table th{
+    background:#0d6efd;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+table tr:hover{
+    background:#f1f5ff;
+}
+
+.patient-form{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.patient-form input{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.patient-form button{
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:8px;
+    padding:12px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.patient-form button:hover{
+    background:#084298;
+}
+
+#search{
+    width:300px;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.action-btn{
+    padding:6px 12px;
+    margin:2px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.edit{
+    background:#ffc107;
+}
+
+.delete{
+    background:#dc3545;
+    color:white;
+}
+
+/* ================= BILLING ================= */
+
+.bill-box{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    width:400px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.bill-box h2{
+
+    color:#0d6efd;
+
+    margin-bottom:20px;
+
+}
+
+.bill-box p{
+
+    margin:15px 0;
+
+    font-size:18px;
+
+}
+
+.bill-box button{
+
+    background:#198754;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.bill-box button:hover{
+
+    background:#146c43;
+
+}

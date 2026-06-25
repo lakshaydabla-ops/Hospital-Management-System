@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h2>🏥 CarePlus</h2>
+
+        <ul>
+            <li><a href="../index.html">🏠 Home</a></li>
+            <li><a href="dashboard.html">📊 Dashboard</a></li>
+            <li><a href="patients.html">🧑 Patients</a></li>
+            <li><a href="doctors.html">👨‍⚕️ Doctors</a></li>
+            <li><a href="appointments.html">📅 Appointments</a></li>
+            <li><a href="billing.html">💳 Billing</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <h1>Billing System</h1>
+
+        <div class="patient-form">
+
+            <input type="text" id="billPatient" placeholder="Patient Name">
+
+            <input type="number" id="consultation" placeholder="Consultation Fee">
+
+            <input type="number" id="medicine" placeholder="Medicine Charges">
+
+            <input type="number" id="room" placeholder="Room Charges">
+
+            <input type="number" id="tests" placeholder="Test Charges">
+
+            <button onclick="generateBill()">Generate Bill</button>
+
+        </div>
+
+        <br>
+
+        <div class="bill-box">
+
+            <h2>Bill Details</h2>
+
+            <p><strong>Patient:</strong> <span id="patientDisplay">-</span></p>
+
+            <p><strong>Total Bill:</strong> ₹ <span id="totalBill">0</span></p>
+
+            <br>
+
+            <button onclick="window.print()">🖨 Print Bill</button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

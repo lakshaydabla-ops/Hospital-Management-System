@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors Management</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h2>🏥 CarePlus</h2>
+
+        <ul>
+            <li><a href="../index.html">🏠 Home</a></li>
+            <li><a href="dashboard.html">📊 Dashboard</a></li>
+            <li><a href="patients.html">🧑 Patients</a></li>
+            <li><a href="doctors.html">👨‍⚕️ Doctors</a></li>
+            <li><a href="appointments.html">📅 Appointments</a></li>
+            <li><a href="billing.html">💳 Billing</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+
+        <h1>Doctors Management</h1>
+
+        <div class="patient-form">
+
+            <input type="text" id="doctorName" placeholder="Doctor Name">
+
+            <input type="text" id="specialization" placeholder="Specialization">
+
+            <input type="text" id="phone" placeholder="Phone Number">
+
+            <input type="number" id="experience" placeholder="Experience (Years)">
+
+            <button onclick="addDoctor()">Add Doctor</button>
+
+        </div>
+
+        <br>
+
+        <input
+            type="text"
+            id="doctorSearch"
+            placeholder="Search Doctor..."
+            onkeyup="searchDoctor()">
+
+        <br><br>
+
+        <table id="doctorTable">
+
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Specialization</th>
+                    <th>Phone</th>
+                    <th>Experience</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
